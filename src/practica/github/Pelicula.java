@@ -9,5 +9,6 @@ package practica.github;
  * @author Administrador
  */
 public class Pelicula {
+    private String productora;
     
 }
