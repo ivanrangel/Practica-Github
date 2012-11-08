@@ -8,6 +8,9 @@ package practica.github;
  *
  * @author Administrador
  */
-public class Obra {
-    
+public class Obra 
+{
+    private String Titulo;
+    private Artista Autor;
+    private int anoEdicion;        
 }
