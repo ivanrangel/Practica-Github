@@ -1,12 +1,12 @@
 public class Artista {
     private String Nombre; 
-    private int añoNacimiento; 
+    private int anoNacimiento; 
     
     
-     public void insertar( String nom,int año)
+     public void insertar( String nom,int ano)
     {
       setNombre(nom);
-      setañoNacimiento(año);  
+      setanoNacimiento(ano);  
     
         
     }
@@ -18,9 +18,9 @@ public class Artista {
       Nombre=nom;
     
     }
-    public void setañoNacimiento(int año)
+    public void setanoNacimiento(int ano)
     {
-       añoNacimiento=año;
+       anoNacimiento=ano;
     }
 
    
