@@ -109,7 +109,7 @@ case 1:
           for ( conta1 = 0; conta1 < numart ; conta1++)
          {
               
-               System.out.println(conta1+"              "+Artistas[conta1].getNombre()+"      "+Artistas[conta1].getañoNacimiento());
+               System.out.println(conta1+"              "+Artistas[conta1].getNombre()+"      "+Artistas[conta1].getanoNacimiento());
                
                System.out.println("-------------------------------------------");
               
@@ -230,7 +230,7 @@ case 1:
               for ( conta1 = 0; conta1 < numart ; conta1++)
          {
               
-               System.out.println(conta1+"              "+Artistas[conta1].getNombre()+"      "+Artistas[conta1].getañoNacimiento());
+               System.out.println(conta1+"              "+Artistas[conta1].getNombre()+"      "+Artistas[conta1].getanoNacimiento());
                
                System.out.println("-------------------------------------------");
               
@@ -352,7 +352,7 @@ case 1:
               for ( conta1 = 0; conta1 < numart ; conta1++)
          {
               
-               System.out.println(conta1+"              "+Artistas[conta1].getNombre()+"      "+Artistas[conta1].getañoNacimiento());
+               System.out.println(conta1+"              "+Artistas[conta1].getNombre()+"      "+Artistas[conta1].getanoNacimiento());
                
                System.out.println("-------------------------------------------");
               
