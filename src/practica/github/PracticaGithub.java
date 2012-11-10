@@ -29,7 +29,7 @@ public class PracticaGithub {
         Libro[] Libros=new Libro[1000];
         Disco[] Discos=new Disco[1000];
         Pelicula[] Peliculas=new Pelicula[1000];
-        //Obra[] Obras=new Obra[1000];
+       
         ////******
         while (opcion != 9)
         {
@@ -66,9 +66,7 @@ case 1:
          System.out.println("Ingrese el número de Artistas: ");
          numart=leer.nextInt();
                  
-          //Artista Artista1= new Artista();
-          //Artista[] Artistas;
-         // Artistas= new Artista[numart];
+         
          
           for ( conta=0;conta < numart; conta++ )
           {
@@ -78,13 +76,11 @@ case 1:
            Nom=leer.nextLine();
            System.out.println("Ingrese El Año de Nacimiento: ");
            año=leer.nextInt();
-           //Artista1.Artista( Nom, año ); 
+         
            Artistas[conta]= new Artista( );
            Artistas[conta].setNombre(Nom);
-           Artistas[conta].setañoNacimiento(año);
-           //Artista1.insertar(Nom, año);
-           //Artistas[conta]= new Artista();
-           //Artistas[conta]=Artista1;
+           Artistas[conta].setanoNacimiento(año);
+         
            
                       
           }
@@ -100,10 +96,7 @@ case 1:
             System.out.println("Ingrese el número de Libros: ");
             lib=leer.nextInt();
             
-            //Libro Libro1= new Libro();
-            //Libro[] Libros;
-            //Libros=new Libro[lib];
-            
+                     
            
       for ( conta=0;conta < lib; conta++ )
       {
@@ -140,16 +133,12 @@ case 1:
                   Libros[conta].setEditorial(Edit);
                   Libros[conta].setnPaginas(pag);
                   Libros[conta].setTitulo(Tit);
-                  Libros[conta].setañoEdicion(anoedic);
+                  Libros[conta].setanoEdicion(anoedic);
                   Libros[conta].setAutor(Artistas[id]);            
-                  //Obras[conta]= new Obra();
-                  //Obras[conta].Obra(Tit, anoedic,Artistas[id]);
-                  //System.out.println("Editorial: "+ Libros[conta].getEditorial());
+                 
                    
                    
-                  //System.out.println("Paginas: "+ Libros[conta].getnPaginas());
-                  //System.out.println("Nombre Autor: "+ Libros[conta].getAutorNombre()); 
-                  //System.out.println("Año Nac: "+ Libros[conta].getañoNacimiento());                 
+                                
           }
        } 
  break;   
@@ -182,11 +171,7 @@ case 1:
            if (Libros[conta3].getAutorNombre().equals(nomaut))
                {
                Libros[conta3].imprimir();    
-               //System.out.println("Título de la obra :"+Libros[conta3].getTitulo());
-               //System.out.println("Año Edición  :"+Libros[conta3].getañoEdicion());
-               //System.out.println("Editorial  :"+Libros[conta3].getEditorial());
-               //System.out.println("Páginas  :"+Libros[conta3].getnPaginas());
-                                      
+             
                }              
          }
          break;     
@@ -201,11 +186,7 @@ case 1:
            if (Libros[conta4].getTitulo().equals(titu))
                {
                Libros[conta4].imprimir();    
-               //System.out.println("Autor  :"+Libros[conta4].getAutorNombre());
-               //System.out.println("Año Edición  :"+Libros[conta4].getañoEdicion());
-               //System.out.println("Editorial  :"+Libros[conta4].getEditorial());
-               //System.out.println("Páginas  :"+Libros[conta4].getnPaginas());
-                                      
+                             
                }              
          }
            break;
@@ -219,11 +200,7 @@ case 1:
            if (Libros[conta5].getEditorial().equals(edito))
                {
                Libros[conta5].imprimir();    
-              // System.out.println("Autor  :"+Libros[conta5].getAutorNombre());
-               //System.out.println("Año Edición  :"+Libros[conta5].getañoEdicion());
-              // System.out.println("Editorial  :"+Libros[conta5].getEditorial());
-              // System.out.println("Páginas  :"+Libros[conta5].getnPaginas());
-                                      
+                              
                }              
          }
            break;
@@ -240,10 +217,7 @@ case 1:
             System.out.println("Ingrese el número de Discos: ");
             dis=leer.nextInt();
             
-            //Libro Libro1= new Libro();
-            //Libro[] Libros;
-            //Libros=new Libro[lib];
-            
+                      
            
       for ( conta=0;conta < dis; conta++ )
       {
@@ -280,16 +254,12 @@ case 1:
                   Discos[conta].setdiscografia(Discogra);
                   Discos[conta].setnCanciones(cancion);
                   Discos[conta].setTitulo(Tit);
-                  Discos[conta].setañoEdicion(anoedic);
+                  Discos[conta].setanoEdicion(anoedic)  ;
+                 
                   Discos[conta].setAutor(Artistas[id]);            
-                  //Obras[conta]= new Obra();
-                  //Obras[conta].Obra(Tit, anoedic,Artistas[id]);
-                 // System.out.println("Editorial: "+ Discos[conta].getdiscografia());
+                 
                    
-                   
-                  //System.out.println("Paginas: "+ Discos[conta].getnCanciones());
-                  //System.out.println("Nombre Autor: "+ Discos[conta].getAutorNombre()); 
-                  //System.out.println("Año Nac: "+ Discos[conta].getañoNacimiento());                 
+                
           }
        } 
  break; 
@@ -322,11 +292,7 @@ case 1:
            if (Discos[conta3].getAutorNombre().equals(nomAut))
                {
                 Discos[conta3].imprimir();      
-               //System.out.println("Título de la obra :"+Discos[conta3].getTitulo());
-               //S/ystem.out.println("Año Edición  :"+Discos[conta3].getañoEdicion());
-               //System.out.println("Discografica  :"+Discos[conta3].getañoEdicion());
-               //System.out.println("N°Canciones  :"+Discos[conta3].getnCanciones());
-                                      
+                            
                }              
          }
          break;     
@@ -341,11 +307,7 @@ case 1:
            if (Discos[conta4].getTitulo().equals(tituO))
                {
                 Discos[conta4].imprimir();     
-               //System.out.println("Autor  :"+Discos[conta4].getAutorNombre());
-              // System.out.println("Año Edición  :"+Discos[conta4].getañoEdicion());
-              // System.out.println("Discografica  :"+Discos[conta4].getdiscografia());
-              // System.out.println("N° Canciones  :"+Discos[conta4].getnCanciones());
-                                      
+                      
                }              
          }
            break;
@@ -359,11 +321,7 @@ case 1:
            if (Discos[conta5].getdiscografia().equals(Disc))
                {
                Discos[conta5].imprimir();    
-               //System.out.println("Titulo  :"+Discos[conta5].getTitulo());
-              // System.out.println("Año Edición  :"+Discos[conta5].getañoEdicion());
-              // System.out.println( "Autor  :"+Discos[conta5].getAutorNombre());
-              // System.out.println("N° Canciones  :"+Discos[conta5].getnCanciones());
-                                      
+                       
                }              
          }
            break;
@@ -381,9 +339,7 @@ case 1:
             p=leer.nextInt();
             
             Artista interprete= new Artista();
-            //Libro[] Libros;
-            //Libros=new Libro[lib];
-            
+          
            
       for ( conta=0;conta < p; conta++ )
       {
@@ -424,14 +380,12 @@ case 1:
                   Peliculas[conta].setProductora(produc) ;
                   Peliculas[conta].setInterprete(interprete);
                   Peliculas[conta].setTitulo(Tit);
-                  Peliculas[conta].setañoEdicion(anoedic);
+                  Peliculas[conta].setanoEdicion(anoedic);
                   Peliculas[conta].setAutor(Artistas[id]); 
                   
                  
                    
-                  //System.out.println("Paginas: "+ Discos[conta].getnCanciones());
-                  //System.out.println("Nombre Autor: "+ Discos[conta].getAutorNombre()); 
-                  //System.out.println("Año Nac: "+ Discos[conta].getañoNacimiento());                 
+                     
           }
        } 
  break;  
@@ -505,9 +459,7 @@ case 1:
      
      switch(opcion8){
          case 1:
-              //System.out.println("Ingrese el nombre de la productora: ");
-              //nompro = leer.nextLine();
-              //nompro = leer.nextLine();
+            
           int conta3;
         for ( conta3 = 0; conta3 <lib  ; conta3++)
          {
@@ -559,5 +511,4 @@ case 1:
     
 
 
-    }
-}
+
