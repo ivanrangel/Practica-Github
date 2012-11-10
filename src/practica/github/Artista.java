@@ -30,11 +30,7 @@ public class Artista
     }          
     
     public String getNombre()
-    {
-        return Nombre; 
-    }
+    { return Nombre; }
     public int getanoNacimiento()
-    {
-        return anoNacimiento;
-    }      
+    {return anoNacimiento;}      
 }
