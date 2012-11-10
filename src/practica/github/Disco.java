@@ -8,49 +8,37 @@ package practica.github;
  *
  * @author Administrador
  */
-public class Disco {
+public class Disco extends Obra {
     
-    private String discografica;
+    private String discografia;
     private int nCanciones;
-    //private String Titulo;
     
-    public Disco (String titulo, Artista p,int ano, String discografia, int nCancion)
+    
+    public void Disco (String disc, int cancion, String titulo , int ano, Artista p)
     {
-      //setTitulo(titulo);
-      //setAutor(p);
-      //setanoEdicion(ano);   
-      setDiscografica(discografia);
-      setnCanciones(nCancion);
+      super.Obra(titulo,ano, p);  
+      setdiscografia(disc);
+      setnCanciones(cancion); 
     }    
     
-    //public void setTitulo(String titulo) {
-    //Titulo = titulo;
-    //}
-	  
-    //public void setAuthor(Artista p) {
-    //Autor = p;
-    //}
+    public void imprimir(){
+          System.out.println("Titulo: "+super.getTitulo()) ;
+          System.out.println("Autor: "+super.getAutorNombre() ) ;
+          System.out.println("Año de Nacimiento autor "+super.getañoNacimiento()) ;
+          System.out.println("Año Edicion "+super.getañoEdicion() );
+          System.out.println("Discografica: "+getdiscografia() );
+          System.out.println("Nª Canciones: "+getnCanciones() );
+           
+     } 
+     
+    public void setdiscografia(String disc)
+    	{ discografia=disc;}
+    public void setnCanciones(int cancion)
+	{nCanciones=cancion;}
+    public String getdiscografia()
+	{ return discografia; }
+    public int getnCanciones()
+	{return nCanciones;}
 
-    //public void setYear(int year) {
-    // = year;
-    //}
-
-    public void setDiscografica(String discografia) {
-    this.discografica = discografia;
-    }
-
-    public void setnCanciones(int nCancion) {
-    this.nCanciones = nCancion;
-    }
-
-    public String getDiscografica() {
-    return discografica;
-    }
-
-    public int getnCanciones() {
-    return nCanciones;
-    }
-
-    
-    
 }
+
