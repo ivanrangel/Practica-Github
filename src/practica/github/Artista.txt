@@ -1,0 +1,32 @@
+public class Artista {
+    private String Nombre; 
+    private int añoNacimiento; 
+    
+    
+     public void insertar( String nom,int año)
+    {
+      setNombre(nom);
+      setañoNacimiento(año);  
+    
+        
+    }
+     
+      
+    
+    public void setNombre(String nom)
+    { 
+      Nombre=nom;
+    
+    }
+    public void setañoNacimiento(int año)
+    {
+       añoNacimiento=año;
+    }
+
+   
+   
+    
+    
+   
+    
+}
