@@ -45,15 +45,12 @@ public class Obra
         return anoEdicion;
     }        
 
-    String getAutorNombre() {
-        throw new UnsupportedOperationException("Not yet implemented");
-    }
-
-    String getañoNacimiento() {
-        throw new UnsupportedOperationException("Not yet implemented");
-    }
-
-    String getañoEdicion() {
-        throw new UnsupportedOperationException("Not yet implemented");
-    }
+    public String getAutorNombre()
+    {
+        return Autor.getNombre() ;
+    }  
+    public int getanoNacimiento()
+    {
+        return Autor.getanoNacimiento();
+    }              
 }
