@@ -22,8 +22,8 @@ package practica.github;
     public void imprimir(){
           System.out.println ( "Titulo:       " + super.getTitulo() ) ;
           System.out.println ( "Autor :       " + super.getAutorNombre() ) ;
-          System.out.println ( "Año Nacimiento Autor : " + super.getañoNacimiento() ) ;
-          System.out.println ( "Año Edicion : " + super.getañoEdicion() );
+          System.out.println ( "Año Nacimiento Autor : " + super.getanoNacimiento() ) ;
+          System.out.println ( "Año Edicion : " + super.getanoEdicion() );
           System.out.println ( "Editorial:    "+getEditorial() );
           System.out.println ( "Nª Paginas:   "+getnPaginas() );
            
